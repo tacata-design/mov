@@ -1,0 +1,11 @@
+.mainWrapper {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  text-align: center;
+}
+.titleStyles {
+  font-size: 48px;
+  color: #45533c;
+}

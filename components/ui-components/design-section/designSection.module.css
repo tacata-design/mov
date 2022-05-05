@@ -1,0 +1,61 @@
+.designSectionWrapper {
+  display: flex;
+  margin: 24px 0;
+  flex-direction: column;
+  width: 100%;
+}
+.imageWrapper {
+  position: relative;
+  width: 100%;
+}
+.designSectionTitleWrapper {
+  display: flex;
+  /* margin-top: 24px; */
+}
+.textArea {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 50%; */
+}
+.textArea h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #a9bdc2;
+  margin: 0;
+  padding: 0;
+}
+.textArea h3 {
+  font-weight: 200;
+  margin: 16px 0 32px;
+}
+.ctaButtonWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.ctaButtonWrapper button {
+  background-color: #a9bdc2;
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .designSectionTitleWrapper {
+    margin-top: -80px;
+  }
+  .textArea {
+    max-width: 50%;
+  }
+  .ctaButtonWrapper {
+    justify-content: flex-start;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

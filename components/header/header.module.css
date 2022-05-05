@@ -1,0 +1,188 @@
+.headerWrapper,
+.headerWrapperOpen {
+  position: fixed;
+  display: flex;
+  z-index: 120;
+  height: 60px;
+  top: 0;
+  background-color: #fff;
+  color: #fff;
+  width: 100vw;
+}
+.headerWrapperOpen {
+  background-color: #fff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+}
+.headerContainer {
+  width: 100vw;
+  padding: 0 6px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.logoWrapper {
+  display: flex;
+  position: relative;
+  height: 45px;
+  width: 150px;
+}
+.logoWrapper a {
+  display: flex;
+}
+.green {
+  fill: #9bc5ac;
+}
+.navSection {
+  display: none;
+}
+.ulStyle {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.menuItems a {
+  background-color: #fff;
+  color: #9cc6ad;
+}
+.greenLink a {
+  background-color: #fff;
+  color: #45533c;
+}
+.menuButton {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  color: #9cc6ad;
+  margin-left: auto;
+}
+.menuButton i {
+  font-size: 30px;
+  margin-right: 5px;
+}
+.headerModal,
+.closeHeaderModal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  color: #9cc6ad;
+  background-color: #fff;
+  margin-top: 60px;
+  border-right: unset;
+  transform: translateY(0px);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 600ms;
+}
+.closeHeaderModal {
+  transform: translateY(-1500px);
+}
+.headerModal button,
+.closeHeaderModal button {
+  display: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 10px;
+  color: #9cc6ad;
+  background-color: #fff;
+}
+.mobileLinks {
+  display: block;
+}
+.mobileMenu ul {
+  list-style: none;
+  font-size: 20px;
+  padding: 0 1rem;
+  margin: 0;
+  background-color: #fff;
+}
+.mobileMenu li {
+  border-top: 1px solid #fafafa;
+  padding: 0 1rem;
+}
+.mobileMenu ul > li:first-of-type {
+  border-top: none;
+}
+.mobileMenu li a {
+  display: inline-block;
+  padding: 30px 20px;
+  width: 100vw;
+}
+.modalBackground {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.closeModalBackground {
+  display: none;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .headerContainer {
+    padding: 0 16px 0 8px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* .headerContainer {
+    padding: 0 6px;
+  } */
+  .headerWrapper,
+  .headerWrapperOpen {
+    height: 70px;
+  }
+  .navSection {
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  .menuButton {
+    display: none;
+  }
+  .menuItems,
+  .greenLink {
+    margin-left: 20px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .headerWrapper,
+  .headerWrapperOpen {
+    height: 100px;
+  }
+  .navSection {
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  .menuItems,
+  .greenLink {
+    margin-left: 30px;
+  }
+  .menuButton {
+    display: none;
+  }
+  /* .logoWrapper {
+    padding: 24px 0;
+  } */
+  .logoWrapper {
+    height: 60px;
+    width: 200px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

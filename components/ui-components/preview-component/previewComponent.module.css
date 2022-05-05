@@ -1,0 +1,19 @@
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1024px;
+}
+.titleStyles {
+  font-size: 32px;
+  color: #9cc6ad;
+}
+.leadTextStyles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.leadTextStyles p {
+  font-size: 19px;
+  font-weight: 200;
+}

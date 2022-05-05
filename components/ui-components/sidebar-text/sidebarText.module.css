@@ -1,0 +1,18 @@
+.sidebarWrapper {
+  border-left: 8px solid #45533c;
+  padding-left: 16px;
+  margin: 24px 0;
+}
+.sidebarWrapper p {
+  margin: 0;
+  padding: 0;
+}
+.textStyles {
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 24px;
+  font-weight: 200;
+}
+.authorStyles {
+  font-style: italic;
+}

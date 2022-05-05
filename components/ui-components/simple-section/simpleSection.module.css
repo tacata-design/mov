@@ -1,0 +1,110 @@
+.simpleSectionWrapper {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  margin: 24px 0;
+  position: relative;
+}
+.imageWrapper {
+  position: relative;
+}
+.simpleSectionTitleWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #45533c;
+  padding: 32px 16px 48px 16px;
+  margin-top: -8px;
+}
+.simpleSectionTitleWrapper h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.simpleSectionTitleWrapper h3 {
+  font-weight: 200;
+  margin: 16px 0 32px;
+}
+.ctaButtonWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.ctaButtonWrapper button {
+  background-color: #a69c6b;
+}
+.white {
+  fill: #fff;
+}
+.customImageDividerTop {
+  width: 100%;
+  position: absolute;
+  transform: rotate(180deg);
+  z-index: 1;
+  overflow: hidden;
+  line-height: 0;
+}
+.customImageDividerTop svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 30px;
+}
+.customShapeDividerTop,
+.customShapeDividerBottom {
+  width: 100%;
+  position: absolute;
+  transform: rotate(180deg);
+  z-index: 1;
+  overflow: hidden;
+  line-height: 0;
+}
+.customShapeDividerTop svg,
+.customShapeDividerBottom svg {
+  position: relative;
+  display: block;
+  width: calc(138% + 1.3px);
+  height: 30px;
+}
+.customShapeDividerBottom {
+  bottom: -16px;
+  transform: rotate(360deg);
+  transform: scaleX(-1);
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  /* .simpleSectionTitleWrapper {
+    padding: 0 24px 0 24px;
+    margin-top: 0px;
+  } */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .simpleSectionWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .customShapeDividerBottom {
+    bottom: 0;
+  }
+  .customShapeDividerTop {
+    margin-top: -5px;
+  }
+  .simpleSectionTitleWrapper {
+    padding: 0 16px 0 16px;
+    margin-top: 0px;
+  }
+  .ctaButtonWrapper {
+    justify-content: flex-start;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .simpleSectionTitleWrapper {
+    padding: 0 96px 0 64px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
