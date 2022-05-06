@@ -4,7 +4,6 @@ import { DynamicComponent } from '../components/dynamic-component'
 import styles from '../styles/Home.module.css'
 
 export default function Exposiciones({ storyblokData }) {
-  console.log('DATA:', storyblokData)
   const pageContent = storyblokData.data.story.content.body.map((blok) => (
     <DynamicComponent key={blok._uid} blok={blok} expo />
   ))

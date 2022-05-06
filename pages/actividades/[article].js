@@ -11,7 +11,7 @@ const COMPONENTS = {
 
 export default function Article({ storyblokData }) {
   let headerContent = null
-  const pageContent = storyblokData.data.story.content.body.map((blok) => {
+  const pageContent = storyblokData?.data?.story?.content?.body?.map((blok) => {
     if (blok.component && COMPONENTS[blok.component]) {
       const ArticleHeaderComponent = COMPONENTS[blok.component]
       headerContent = <ArticleHeaderComponent key={blok._uid} blok={blok} />
@@ -36,7 +36,8 @@ export default function Article({ storyblokData }) {
   )
 }
 
-export const getStaticPaths = async () => await getStoryblokLinks()
+export const getStaticPaths = async () =>
+  await getStoryblokLinks({ starts_with: 'actividades' })
 export const getStaticProps = async (context) => {
   const { article } = context?.params
   const path = [PAGE_PATH, article].join('/')
