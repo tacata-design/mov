@@ -1,4 +1,4 @@
-export const handleLinks = (storyblokLinks) => {
+export const handleArticleLinks = (storyblokLinks) => {
   const articlePaths = Object.values(storyblokLinks.data.links).map(
     (article) => article.slug
   )

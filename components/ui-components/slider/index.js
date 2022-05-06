@@ -3,7 +3,6 @@ import { ImageWrapper } from '../image-wrapper'
 import { mainWrapper, titleWrapper } from './slider.module.css'
 
 export const SliderWrapper = ({ blok }) => {
-  console.log('THE FUUKIN BLOG:', blok)
   let content = null
   if (blok) {
     const { title, elements, speed, slidesToShow } = blok

@@ -1,5 +1,5 @@
 import StoryblokClient from 'storyblok-js-client'
-import { handleLinks } from './helpers'
+import { handleArticleLinks } from './helpers'
 
 const STORYBLOK_STORIES = 'cdn/stories'
 const STORYBLOK_LINKS = 'cdn/links/'
@@ -41,7 +41,8 @@ export const getStoryblokLinks = async (options = {}) => {
     STORYBLOK_LINKS,
     additionalFetchParams
   )
-  const paths = handleLinks(storyblokLinks)
+
+  const paths = handleArticleLinks(storyblokLinks)
 
   return {
     paths,

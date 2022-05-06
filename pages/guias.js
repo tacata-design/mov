@@ -10,7 +10,6 @@ const COMPONENTS = {
 }
 
 export default function Guias({ storyblokData, getSliderData }) {
-  console.log('DATA:', storyblokData)
   let headerContent = null
   const pageContent = storyblokData.data.story.content.body.map((blok) => {
     if (blok.component && COMPONENTS[blok.component]) {
@@ -27,7 +26,7 @@ export default function Guias({ storyblokData, getSliderData }) {
         getSliderData(blok)
       }
     })
-  }, [])
+  }, [getSliderData, storyblokData])
 
   return (
     <>
