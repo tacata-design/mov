@@ -9,7 +9,7 @@ export const ArticleHeader = ({ blok }) => {
     <div className={mainWrapper}>
       <h1 className={titleStyles}>{title}</h1>
       <h2>{leadText}</h2>
-      <ImageWrapper blok={src} blur />
+      <ImageWrapper blok={src} />
     </div>
   )
 }
