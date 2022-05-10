@@ -1,7 +1,12 @@
 import Head from 'next/head'
 import { getStoryblokLinks, getStoryblokData } from '../../utils/storyblok'
+
+// Components
 import { DynamicComponent } from '../../components/dynamic-component'
 import { ArticleHeader } from '../../components/ui-components/article-header'
+
+// Styles
+import { main } from '../../styles/shared.module.css'
 import { mainWrapper, bodyContent } from '../../styles/article.module.css'
 
 const PAGE_PATH = 'actividades'
@@ -28,10 +33,12 @@ export default function Article({ storyblokData }) {
           content='Todas las actividades de Estudio Mov'
         />
       </Head>
-      <div className={mainWrapper}>
-        {headerContent}
-        <div className={bodyContent}>{pageContent}</div>
-      </div>
+      <main className={main}>
+        <div className={mainWrapper}>
+          {headerContent}
+          <div className={bodyContent}>{pageContent}</div>
+        </div>
+      </main>
     </>
   )
 }

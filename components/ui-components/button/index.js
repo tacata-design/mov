@@ -2,14 +2,14 @@ import style from './button.module.css'
 
 const { buttonStyle } = style
 
-export const Button = ({ blok }) => {
+export const Button = ({ blok, color }) => {
   const { buttonText, buttonLink, buttonColor, target, onClick } = blok
   const [gotTo] = target
 
   let element = (
     <button
       className={buttonStyle}
-      style={{ background: buttonColor }}
+      style={{ background: buttonColor, color }}
       onClick={onClick}
     >
       {buttonText}

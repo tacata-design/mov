@@ -1,6 +1,9 @@
 .mainWrapper {
   width: 100%;
 }
+.mainWrapper h1 {
+  font-size: 48px;
+}
 .bodyContent {
   max-width: 676px;
   margin: 0 auto;

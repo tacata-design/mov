@@ -1,0 +1,63 @@
+.ctaSection {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+.ctaSection button {
+  padding: 14px 40px;
+  font-size: 16px;
+  letter-spacing: 6px;
+  font-weight: bold;
+}
+.headerSection {
+  margin: 0 auto;
+  text-align: center;
+}
+.headerSection p {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  /* margin: 0; */
+  margin-top: 16px;
+}
+.headerSection h2 {
+  font-size: 48px;
+  color: #fff;
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+.richTextStyles {
+  font-size: 19px;
+  font-weight: 200;
+}
+.richTextStyles ul {
+  list-style: none;
+  margin: 48px 0 48px 0;
+  padding: 0;
+}
+.richTextStyles li p {
+  margin: 0;
+  margin-top: 8px;
+}
+
+.main {
+  padding: 24px 8px 24px 8px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (min-width: 576px) {
+  .main {
+    padding: 48px 24px;
+  }
+}
+@media (min-width: 768px) {
+  .main {
+    padding: 48px 56px;
+  }
+}
+@media (min-width: 992px) {
+  .main {
+    padding: 48px 16px 48px;
+  }
+}

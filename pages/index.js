@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { getStoryblokData } from '../utils/storyblok'
 import { DynamicComponent } from '../components/dynamic-component'
+import { main } from '../styles/shared.module.css'
 
 export default function Home({ storyblokData }) {
   const pageContent = storyblokData.data.story.content.body.map((blok) => (
@@ -14,7 +15,7 @@ export default function Home({ storyblokData }) {
           content='Estudio Mov somos un grupo de profesionales apasionados del Marketing que creemos en las personas.'
         />
       </Head>
-      {pageContent}
+      <main className={main}>{pageContent}</main>
     </>
   )
 }

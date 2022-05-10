@@ -1,8 +1,13 @@
 import Head from 'next/head'
 import { getStoryblokData } from '../../utils/storyblok'
+
+// Components
 import { LeadTextSection } from '../../components/ui-components/leadtext-section'
 import { ArticleCluster } from '../../components/ui-components/article-cluster'
+
+// Styles
 import styles from '../../styles/actividades.module.css'
+import { main } from '../../styles/shared.module.css'
 
 const { mainWrapper } = styles
 
@@ -29,10 +34,12 @@ export default function Actividades({ storyblokData, articleList }) {
       <Head>
         <meta name='description' content='Guías de reciclaje Estudio Mov' />
       </Head>
-      <div className={mainWrapper}>
-        {headerContent}
-        {contentCluster}
-      </div>
+      <main className={main}>
+        <div className={mainWrapper}>
+          {headerContent}
+          {contentCluster}
+        </div>
+      </main>
     </>
   )
 }
