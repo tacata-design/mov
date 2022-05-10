@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/router'
 import { Layout } from '../components/layout'
 
+// Styles
 import '../styles/globals.css'
 
 export default function MyApp({ Component, pageProps }) {

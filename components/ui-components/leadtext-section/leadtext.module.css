@@ -6,6 +6,11 @@
   margin-bottom: 48px;
 }
 .titleStyles {
+  font-size: 64px;
+  margin: 0;
+  color: #45533c;
+}
+.secondaryTitleStyles {
   font-size: 48px;
   margin: 0;
   color: #45533c;

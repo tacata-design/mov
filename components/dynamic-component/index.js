@@ -25,10 +25,12 @@ const COMPONENTS = {
   articleHeader: ArticleHeader,
 }
 
-export const DynamicComponent = ({ blok, articleList, expo }) => {
+export const DynamicComponent = ({ blok, articleList, secondary }) => {
   if (typeof COMPONENTS[blok.component] !== 'undefined') {
     const Component = COMPONENTS[blok.component]
-    return <Component blok={blok} articleList={articleList} expo={expo} />
+    return (
+      <Component blok={blok} articleList={articleList} secondary={secondary} />
+    )
   }
 
   return null

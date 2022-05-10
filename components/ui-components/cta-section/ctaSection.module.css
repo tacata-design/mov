@@ -28,7 +28,7 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .ctaSectionWrapper {
-    margin: 48px 0 72px;
+    margin: 72px 0;
   }
 }
 

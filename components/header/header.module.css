@@ -47,6 +47,9 @@
   background-color: #fff;
   color: #9cc6ad;
 }
+.menuItems a:hover {
+  color: #45533c;
+}
 .greenLink a {
   background-color: #fff;
   color: #45533c;
