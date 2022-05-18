@@ -22,10 +22,10 @@ export default function KitDigital({ storyblokData }) {
       categories.push(<Categories key={blok._uid} blok={blok} />)
     }
     if (blok.component === 'textFeature') {
-      return <TextFeature blok={blok} />
+      return <TextFeature key={blok._uid} blok={blok} />
     }
     if (blok.component === 'simpleSection') {
-      simpleContent.push(<SimpleSection key={blok._uid} blok={blok} />)
+      simpleContent.push(<SimpleSection key={blok._uid} blok={blok} expo />)
     } else {
       return <DynamicComponent key={blok._uid} blok={blok} secondary />
     }
