@@ -10,7 +10,7 @@ import Link from 'next/link'
 
 // Components
 import { Modal } from '../ui-components/modal'
-import { logoSVG, footerSVG } from '../ui-components/svg'
+import { logoSVG } from '../ui-components/svg'
 // Styles
 import styles from './header.module.css'
 
