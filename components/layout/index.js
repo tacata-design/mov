@@ -9,6 +9,12 @@ export const Layout = ({ children, sliderData }) => {
     <>
       <Head>
         <title>Estudio Mov</title>
+        <link
+          rel='preload'
+          href='/fonts/Oxygen-Regular.ttf'
+          as='font'
+          crossOrigin=''
+        />
       </Head>
       <Header />
       {children}
