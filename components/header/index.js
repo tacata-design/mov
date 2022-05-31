@@ -201,12 +201,12 @@ export const Header = () => {
               >
                 <Link href='/kit-digital'>KIT DIGITAL</Link>
               </li>
-              <li
+              {/* <li
                 className={rscLink ? greenLink : menuItems}
                 onClick={() => linkClickHandler('/rsc')}
               >
                 <Link href='/rsc'>RSC</Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <button
@@ -242,9 +242,9 @@ export const Header = () => {
             <li className={mobileNavItems}>
               <Link href='/kit-digital'>KIT DIGITAL</Link>
             </li>
-            <li className={mobileNavItems}>
+            {/* <li className={mobileNavItems}>
               <Link href='/rsc'>RSC</Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </Modal>

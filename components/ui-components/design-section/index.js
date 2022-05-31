@@ -1,9 +1,8 @@
 import Image from 'next/image'
-
-// Styles
-import styles from './designSection.module.css'
 // Components
 import { Button } from '../button'
+// Styles
+import styles from './designSection.module.css'
 
 const {
   designSectionWrapper,

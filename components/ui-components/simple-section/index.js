@@ -1,11 +1,9 @@
-import Image from 'next/image'
-
-// Styles
-import styles from './simpleSection.module.css'
 // Components
 import { ImageWrapper } from '../image-wrapper'
 import { Button } from '../button'
 import { footerSVG } from '../svg'
+// Styles
+import styles from './simpleSection.module.css'
 
 const {
   simpleSectionWrapper,

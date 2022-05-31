@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import { useEffect } from 'react'
 import { getStoryblokData } from '../utils/storyblok'
+// Components
 import { ArticleHeader } from '../components/ui-components/article-header'
 import { DynamicComponent } from '../components/dynamic-component'
+// Styles
 import { mainWrapper, bodyContent } from '../styles/Guias.module.css'
 import { main } from '../styles/Shared.module.css'
 

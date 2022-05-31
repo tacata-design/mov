@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import { getStoryblokData } from '../utils/storyblok'
+// Components
 import { DynamicComponent } from '../components/dynamic-component'
+// Styles
 import { main } from '../styles/Shared.module.css'
 
 export default function Home({ storyblokData }) {

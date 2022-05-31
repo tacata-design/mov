@@ -1,10 +1,9 @@
 import Image from 'next/image'
-
-// Styles
-import styles from './hero.module.css'
 // Components
 import { Button } from '../button'
 import { ImageWrapper } from '../image-wrapper'
+// Styles
+import styles from './hero.module.css'
 
 const {
   heroWrapper,

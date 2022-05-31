@@ -1,7 +1,6 @@
 // Components
 import { RichTextComponent } from '../richtext-component'
 import { Button } from '../button'
-
 // Styles
 import {
   main,

@@ -1,10 +1,8 @@
 import Head from 'next/head'
 import { getStoryblokLinks, getStoryblokData } from '../../utils/storyblok'
-
 // Components
 import { DynamicComponent } from '../../components/dynamic-component'
 import { ArticleHeader } from '../../components/ui-components/article-header'
-
 // Styles
 import { main } from '../../styles/Shared.module.css'
 import { mainWrapper, bodyContent } from '../../styles/Article.module.css'

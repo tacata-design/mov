@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import { getStoryblokData } from '../utils/storyblok'
+// Components
 import { DynamicComponent } from '../components/dynamic-component'
 import { SimpleSection } from '../components/ui-components/simple-section'
+// Styles
 import { main } from '../styles/Shared.module.css'
 
 export default function Exposiciones({ storyblokData }) {

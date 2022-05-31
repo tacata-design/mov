@@ -1,13 +1,11 @@
 import Head from 'next/head'
 import { getStoryblokData } from '../utils/storyblok'
-
 // Components
 import { ArticleHeaderKitDigital } from '../components/ui-components/article-header/ArticleHeaderKitDigital'
 import { DynamicComponent } from '../components/dynamic-component'
 import { Categories } from '../components/ui-components/categories'
 import { TextFeature } from '../components/ui-components/text-feature'
 import { SimpleSection } from '../components/ui-components/simple-section'
-
 // Styles
 import { main } from '../styles/KitDigital.module.css'
 
