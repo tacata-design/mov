@@ -214,10 +214,8 @@ export const Header = () => {
             onClick={() => setMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
-              // <i className='fa fa-close'></i>
               <FontAwesomeIcon icon={faClose} />
             ) : (
-              // <i className='fa fa-bars'></i>
               <FontAwesomeIcon icon={faBars} />
             )}
           </button>
