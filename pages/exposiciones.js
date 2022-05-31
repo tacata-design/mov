@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { getStoryblokData } from '../utils/storyblok'
 import { DynamicComponent } from '../components/dynamic-component'
 import { SimpleSection } from '../components/ui-components/simple-section'
-import { main } from '../styles/shared.module.css'
+import { main } from '../styles/Shared.module.css'
 
 export default function Exposiciones({ storyblokData }) {
   const pageContent = storyblokData.data.story.content.body.map(

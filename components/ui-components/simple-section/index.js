@@ -39,7 +39,7 @@ export const SimpleSection = ({ blok, expo }) => {
     <Button key={element._uid} blok={element} />
   ))
 
-  const margin = expo ? '-3px' : '24px'
+  const margin = expo ? '-3px' : undefined
   const content =
     imagePosition && imagePosition === 'left' ? (
       <div style={{ margin }} className={simpleSectionWrapper}>
@@ -62,7 +62,7 @@ export const SimpleSection = ({ blok, expo }) => {
             className={simpleSectionTitleWrapper}
           >
             <h2 style={{ color: titleColor }}>{title}</h2>
-            <h3 style={{ color: textColor }}>{subtitle}</h3>
+            <p style={{ color: textColor }}>{subtitle}</p>
             <div className={ctaButtonWrapper}>{ctaButton}</div>
           </div>
         </div>
@@ -83,9 +83,9 @@ export const SimpleSection = ({ blok, expo }) => {
             <h2 style={{ color: titleColor }} className={leftTitle}>
               {title}
             </h2>
-            <h3 style={{ color: textColor }} className={leftText}>
+            <p style={{ color: textColor }} className={leftText}>
               {subtitle}
-            </h3>
+            </p>
             <div className={rightCtaButtonWrapper}>{ctaButton}</div>
           </div>
         </div>

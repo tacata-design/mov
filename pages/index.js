@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { getStoryblokData } from '../utils/storyblok'
 import { DynamicComponent } from '../components/dynamic-component'
-import { main } from '../styles/shared.module.css'
+import { main } from '../styles/Shared.module.css'
 
 export default function Home({ storyblokData }) {
   const pageContent = storyblokData.data.story.content.body.map((blok) => (

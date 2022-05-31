@@ -39,8 +39,9 @@
   margin: 0;
   padding: 0;
 }
-.simpleSectionTitleWrapper h3 {
+.simpleSectionTitleWrapper p {
   font-weight: 200;
+  font-size: 19px;
   margin: 16px 0 32px;
 }
 .ctaButtonWrapper,

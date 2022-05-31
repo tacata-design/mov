@@ -9,7 +9,7 @@ import { TextFeature } from '../components/ui-components/text-feature'
 import { SimpleSection } from '../components/ui-components/simple-section'
 
 // Styles
-import { main } from '../styles/shared.module.css'
+import { main } from '../styles/KitDigital.module.css'
 
 export default function KitDigital({ storyblokData }) {
   const categories = []
@@ -40,7 +40,7 @@ export default function KitDigital({ storyblokData }) {
       </Head>
       <>
         <main className={main}>{pageContent}</main>
-        <div>{categories}</div>
+        {categories}
         <div className={main}>{simpleContent}</div>
       </>
     </>

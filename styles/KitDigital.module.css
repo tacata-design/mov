@@ -1,6 +1,6 @@
 .main {
   padding: 70px 16px 0px 16px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -11,7 +11,7 @@
 }
 @media (min-width: 768px) {
   .main {
-    padding: 90px 56px;
+    padding: 90px 56px 24px 56px;
   }
 }
 @media (min-width: 992px) {

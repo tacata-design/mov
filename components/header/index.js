@@ -183,12 +183,12 @@ export const Header = () => {
               >
                 <Link href='/guias'>GUIAS</Link>
               </li>
-              <li
+              {/* <li
                 className={regalosLink ? greenLink : menuItems}
                 onClick={() => linkClickHandler('/regalos')}
               >
                 <Link href='/regalos'>REGALOS</Link>
-              </li>
+              </li> */}
               <li
                 className={exposicionesLink ? greenLink : menuItems}
                 onClick={() => linkClickHandler('/exposiciones')}
@@ -233,9 +233,9 @@ export const Header = () => {
             <li className={mobileNavItems}>
               <Link href='/guias'>GUÍAS</Link>
             </li>
-            <li className={mobileNavItems}>
+            {/* <li className={mobileNavItems}>
               <Link href='/regalos'>REGALOS</Link>
-            </li>
+            </li> */}
             <li className={mobileNavItems}>
               <Link href='/exposiciones'>EXPOSICIONES</Link>
             </li>
