@@ -28,14 +28,6 @@ export default function Document() {
         <meta name='theme-color' content='#ffffff'></meta>
         <link
           rel='stylesheet'
-          href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
-        />
-        <link
-          rel='stylesheet'
-          href='https://fonts.googleapis.com/icon?family=Material+Icons'
-        />
-        <link
-          rel='stylesheet'
           type='text/css'
           charSet='UTF-8'
           href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'

@@ -10,12 +10,10 @@
 }
 .designSectionTitleWrapper {
   display: flex;
-  /* margin-top: 24px; */
 }
 .textArea {
   display: flex;
   flex-direction: column;
-  /* max-width: 50%; */
 }
 .textArea h2 {
   font-size: 32px;

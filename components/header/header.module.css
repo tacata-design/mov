@@ -57,8 +57,8 @@
   color: #9cc6ad;
   margin-left: auto;
 }
-.menuButton i {
-  font-size: 30px;
+.menuButton svg {
+  height: 30px;
   margin-right: 5px;
 }
 .headerModal,

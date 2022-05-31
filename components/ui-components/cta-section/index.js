@@ -1,7 +1,7 @@
-// Styles
-import styles from './ctaSection.module.css'
 // Components
 import { Button } from '../button'
+// Styles
+import styles from './ctaSection.module.css'
 
 const { ctaSectionWrapper, ctaButtonWrapper } = styles
 

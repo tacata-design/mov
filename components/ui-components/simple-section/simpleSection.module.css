@@ -1,6 +1,5 @@
 .simpleSectionWrapper {
   display: grid;
-  /* grid-template-columns: 1fr 1fr; */
   margin: 24px 0;
   position: relative;
   margin-bottom: -10px !important;
@@ -39,8 +38,9 @@
   margin: 0;
   padding: 0;
 }
-.simpleSectionTitleWrapper h3 {
+.simpleSectionTitleWrapper p {
   font-weight: 200;
+  font-size: 19px;
   margin: 16px 0 32px;
 }
 .ctaButtonWrapper,
@@ -93,10 +93,6 @@
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  /* .simpleSectionTitleWrapper {
-    padding: 0 24px 0 24px;
-    margin-top: 0px;
-  } */
 }
 
 /* Medium devices (tablets, 768px and up) */

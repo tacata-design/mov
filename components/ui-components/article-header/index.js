@@ -1,4 +1,5 @@
 import { ImageWrapper } from '../image-wrapper'
+// Styles
 import { mainWrapper, titleStyles } from './articleHeader.module.css'
 
 export const ArticleHeader = ({ blok, imageWidth, imageHeight }) => {

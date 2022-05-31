@@ -7,6 +7,8 @@ import {
   createContext,
 } from 'react'
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faClose } from '@fortawesome/free-solid-svg-icons'
 
 // Components
 import { Modal } from '../ui-components/modal'
@@ -181,12 +183,12 @@ export const Header = () => {
               >
                 <Link href='/guias'>GUIAS</Link>
               </li>
-              <li
+              {/* <li
                 className={regalosLink ? greenLink : menuItems}
                 onClick={() => linkClickHandler('/regalos')}
               >
                 <Link href='/regalos'>REGALOS</Link>
-              </li>
+              </li> */}
               <li
                 className={exposicionesLink ? greenLink : menuItems}
                 onClick={() => linkClickHandler('/exposiciones')}
@@ -199,12 +201,12 @@ export const Header = () => {
               >
                 <Link href='/kit-digital'>KIT DIGITAL</Link>
               </li>
-              <li
+              {/* <li
                 className={rscLink ? greenLink : menuItems}
                 onClick={() => linkClickHandler('/rsc')}
               >
                 <Link href='/rsc'>RSC</Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <button
@@ -212,9 +214,9 @@ export const Header = () => {
             onClick={() => setMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
-              <i className='fa fa-close'></i>
+              <FontAwesomeIcon icon={faClose} />
             ) : (
-              <i className='fa fa-bars'></i>
+              <FontAwesomeIcon icon={faBars} />
             )}
           </button>
         </div>
@@ -231,18 +233,18 @@ export const Header = () => {
             <li className={mobileNavItems}>
               <Link href='/guias'>GUÍAS</Link>
             </li>
-            <li className={mobileNavItems}>
+            {/* <li className={mobileNavItems}>
               <Link href='/regalos'>REGALOS</Link>
-            </li>
+            </li> */}
             <li className={mobileNavItems}>
               <Link href='/exposiciones'>EXPOSICIONES</Link>
             </li>
             <li className={mobileNavItems}>
               <Link href='/kit-digital'>KIT DIGITAL</Link>
             </li>
-            <li className={mobileNavItems}>
+            {/* <li className={mobileNavItems}>
               <Link href='/rsc'>RSC</Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </Modal>

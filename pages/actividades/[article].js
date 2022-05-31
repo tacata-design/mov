@@ -1,13 +1,11 @@
 import Head from 'next/head'
 import { getStoryblokLinks, getStoryblokData } from '../../utils/storyblok'
-
 // Components
 import { DynamicComponent } from '../../components/dynamic-component'
 import { ArticleHeader } from '../../components/ui-components/article-header'
-
 // Styles
-import { main } from '../../styles/shared.module.css'
-import { mainWrapper, bodyContent } from '../../styles/article.module.css'
+import { main } from '../../styles/Shared.module.css'
+import { mainWrapper, bodyContent } from '../../styles/Article.module.css'
 
 const PAGE_PATH = 'actividades'
 const COMPONENTS = {

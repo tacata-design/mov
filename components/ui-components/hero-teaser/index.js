@@ -1,9 +1,9 @@
 import Image from 'next/image'
-
-// Styles
-import styles from './hero.module.css'
 // Components
 import { Button } from '../button'
+import { ImageWrapper } from '../image-wrapper'
+// Styles
+import styles from './hero.module.css'
 
 const {
   heroWrapper,
@@ -41,13 +41,7 @@ export const HeroTeaser = ({ blok }) => {
         </div>
       </div>
       <div className={imageWrapper}>
-        <Image
-          src={image.filename}
-          alt={image.alt}
-          width={640}
-          height={640}
-          priority
-        />
+        <ImageWrapper imageSrc={image.filename} imageAlt={image.alt} priority />
       </div>
     </div>
   )

@@ -1,6 +1,8 @@
 import Link from 'next/link'
+// Components
 import { RichTextComponent } from '../richtext-component'
 import { PreviewComponent } from '../preview-component'
+// Styles
 import { mainWrapper, richTextWrapper } from './articleCluster.module.css'
 
 export const ArticleCluster = ({ blok }) => {

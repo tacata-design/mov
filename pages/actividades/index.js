@@ -1,13 +1,11 @@
 import Head from 'next/head'
 import { getStoryblokData } from '../../utils/storyblok'
-
 // Components
 import { LeadTextSection } from '../../components/ui-components/leadtext-section'
 import { ArticleCluster } from '../../components/ui-components/article-cluster'
-
 // Styles
-import styles from '../../styles/actividades.module.css'
-import { main } from '../../styles/shared.module.css'
+import styles from '../../styles/Actividades.module.css'
+import { main } from '../../styles/Shared.module.css'
 
 const { mainWrapper } = styles
 
