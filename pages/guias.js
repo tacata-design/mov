@@ -5,8 +5,8 @@ import { getStoryblokData } from '../utils/storyblok'
 import { ArticleHeader } from '../components/ui-components/article-header'
 import { DynamicComponent } from '../components/dynamic-component'
 // Styles
-import { mainWrapper, bodyContent } from '../styles/Guias.module.css'
-import { main } from '../styles/Shared.module.css'
+import { mainWrapper, bodyContent } from '../styles/guias.module.css'
+import { main } from '../styles/shared.module.css'
 
 const COMPONENTS = {
   articleHeader: ArticleHeader,
