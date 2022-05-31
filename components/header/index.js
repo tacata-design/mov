@@ -7,6 +7,8 @@ import {
   createContext,
 } from 'react'
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faClose } from '@fortawesome/free-solid-svg-icons'
 
 // Components
 import { Modal } from '../ui-components/modal'
@@ -212,9 +214,11 @@ export const Header = () => {
             onClick={() => setMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
-              <i className='fa fa-close'></i>
+              // <i className='fa fa-close'></i>
+              <FontAwesomeIcon icon={faClose} />
             ) : (
-              <i className='fa fa-bars'></i>
+              // <i className='fa fa-bars'></i>
+              <FontAwesomeIcon icon={faBars} />
             )}
           </button>
         </div>
