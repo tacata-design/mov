@@ -2,9 +2,16 @@ import style from './button.module.css'
 
 const { buttonStyle } = style
 
-export const Button = ({ blok, color }) => {
+export const Button = ({ blok, color, cta }) => {
   const { buttonText, buttonLink, buttonColor, target, onClick } = blok
   const [gotTo] = target
+
+  const buttonHref =
+    cta && buttonLink
+      ? `mailto:${buttonLink}?subject=Quiero formar parte del cambio`
+      : buttonLink
+      ? buttonLink
+      : null
 
   let element = (
     <button
@@ -15,12 +22,12 @@ export const Button = ({ blok, color }) => {
       {buttonText}
     </button>
   )
-  if (buttonLink) {
+  if (buttonHref) {
     element = (
       <a
         className={buttonStyle}
         style={{ background: buttonColor }}
-        href={buttonLink}
+        href={buttonHref}
         target={gotTo}
       >
         {buttonText}
