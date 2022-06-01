@@ -10,6 +10,12 @@
 .preFooterDesign svg {
   transform: rotate(315deg);
 }
+.petalos {
+  margin-top: 64px !important;
+}
+.petalos svg {
+  transform: rotate(346deg);
+}
 .preFooterDesignInnerwrapper {
   display: flex;
   width: 100%;

@@ -8,6 +8,7 @@ import {
   facebookSVG,
   instaSVG,
   leafSVG,
+  petalosSVG,
 } from '../ui-components/svg'
 import styles from './footer.module.css'
 
@@ -38,6 +39,7 @@ const {
   sliderWrapper,
   sliderCustomShapeDivider,
   grey,
+  petalos,
 } = styles
 
 const HOME = '/'
@@ -49,19 +51,25 @@ const WITH_SLIDER_MARGIN = '0px'
 
 export const Footer = ({ sliderData }) => {
   const { pathname } = useRouter()
-  const [showDesignElement, setShowDesignElement] = useState(false)
+  const [showDesignElement, setShowDesignElement] = useState(null)
+  const [petalosStyles, setPetalosStyles] = useState(false)
 
   useEffect(() => {
-    if (
-      pathname === HOME ||
-      pathname === ACTIVIDADES ||
-      pathname === EXPOSICIONES
-    ) {
-      setShowDesignElement(true)
+    if (pathname === HOME || pathname === ACTIVIDADES) {
+      setShowDesignElement(leafSVG(leaf))
+      setPetalosStyles(false)
+    } else if (pathname === EXPOSICIONES) {
+      setShowDesignElement(petalosSVG())
+      setPetalosStyles(true)
     } else {
-      setShowDesignElement(false)
+      setShowDesignElement(null)
+      setPetalosStyles(false)
     }
   }, [pathname])
+
+  const designElementStyles = petalosStyles
+    ? `${preFooterDesignInnerwrapper} ${petalos}`
+    : preFooterDesignInnerwrapper
 
   return (
     <>
@@ -81,7 +89,7 @@ export const Footer = ({ sliderData }) => {
       >
         {showDesignElement && (
           <div className={preFooterDesign}>
-            <div className={preFooterDesignInnerwrapper}>{leafSVG(leaf)}</div>
+            <div className={designElementStyles}>{showDesignElement}</div>
           </div>
         )}
         <div className={customShapeDividerTop}>{footerSVG(green)}</div>

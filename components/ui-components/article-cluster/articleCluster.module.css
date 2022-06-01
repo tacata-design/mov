@@ -19,3 +19,19 @@
 .richTextWrapper b {
   font-weight: 200;
 }
+.previewParagraphStyles p {
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 6;
+}
+
+@media (min-width: 768px) {
+  .previewParagraphStyles p {
+    text-overflow: none;
+    -webkit-line-clamp: none;
+  }
+}

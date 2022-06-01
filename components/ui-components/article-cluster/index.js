@@ -3,7 +3,11 @@ import Link from 'next/link'
 import { RichTextComponent } from '../richtext-component'
 import { PreviewComponent } from '../preview-component'
 // Styles
-import { mainWrapper, richTextWrapper } from './articleCluster.module.css'
+import {
+  mainWrapper,
+  richTextWrapper,
+  previewParagraphStyles,
+} from './articleCluster.module.css'
 
 export const ArticleCluster = ({ blok }) => {
   const {
@@ -37,7 +41,7 @@ export const ArticleCluster = ({ blok }) => {
       {bodyContent}
       <div className={richTextWrapper}>
         <Link href={full_slug}>
-          <a>{richTextParagraph}</a>
+          <a className={previewParagraphStyles}>{richTextParagraph}</a>
         </Link>
       </div>
     </div>
