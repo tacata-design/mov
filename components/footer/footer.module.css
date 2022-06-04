@@ -4,23 +4,36 @@
   width: 100%;
   height: 200px;
   padding: 0;
-  margin-top: -166px;
+  margin-top: -200px;
   z-index: -1;
-}
-.preFooterDesign svg {
-  transform: rotate(315deg);
-}
-.petalos {
-  margin-top: 64px !important;
-}
-.petalos svg {
-  transform: rotate(346deg);
+  padding-top: 50px;
+  overflow: hidden;
 }
 .preFooterDesignInnerwrapper {
   display: flex;
+  justify-content: space-between;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+.leafStyle {
+  margin-top: -20px;
+}
+.leafStyle svg {
+  width: 200px;
+  transform: rotate(315deg);
+  margin-left: -40px;
+}
+.petalosStyle {
+  width: 350px;
+  transform: rotate(352deg);
+  margin-top: 33px !important;
+  margin-left: -124px;
+}
+.waveStyles {
+  margin-top: 12px;
+  margin-right: -20px;
+  transform: rotate(358deg);
 }
 .sliderWrapper {
   background-color: #eaefef;
@@ -268,6 +281,17 @@
     height: 90px;
     margin-right: 16px;
     margin-bottom: 16px;
+  }
+  .waveStyles {
+    margin-top: -40px;
+    margin-right: -24px;
+    transform: rotate(358deg);
+  }
+  /* .preFooterDesign svg {
+    margin: unset;
+  } */
+  .petalosStyle {
+    margin-left: unset;
   }
 }
 @media (min-width: 992px) {

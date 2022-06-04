@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { ImageWrapper } from '../ui-components/image-wrapper'
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 import { SliderWrapper } from '../ui-components/slider'
@@ -39,7 +40,9 @@ const {
   sliderWrapper,
   sliderCustomShapeDivider,
   grey,
-  petalos,
+  petalosStyle,
+  waveStyles,
+  leafStyle,
 } = styles
 
 const HOME = '/'
@@ -52,24 +55,23 @@ const WITH_SLIDER_MARGIN = '0px'
 export const Footer = ({ sliderData }) => {
   const { pathname } = useRouter()
   const [showDesignElement, setShowDesignElement] = useState(null)
-  const [petalosStyles, setPetalosStyles] = useState(false)
+  const [petalos, setPetalos] = useState(false)
 
   useEffect(() => {
     if (pathname === HOME || pathname === ACTIVIDADES) {
       setShowDesignElement(leafSVG(leaf))
-      setPetalosStyles(false)
+      setPetalos(false)
     } else if (pathname === EXPOSICIONES) {
       setShowDesignElement(petalosSVG())
-      setPetalosStyles(true)
+      setPetalos(true)
     } else {
       setShowDesignElement(null)
-      setPetalosStyles(false)
+      setPetalos(false)
     }
   }, [pathname])
 
-  const designElementStyles = petalosStyles
-    ? `${preFooterDesignInnerwrapper} ${petalos}`
-    : preFooterDesignInnerwrapper
+  const designElementStyles = petalos ? petalosStyle : leafStyle
+  const designImage = petalos ? '/images/footer-leaf.png' : '/images/holas.png'
 
   return (
     <>
@@ -89,7 +91,16 @@ export const Footer = ({ sliderData }) => {
       >
         {showDesignElement && (
           <div className={preFooterDesign}>
-            <div className={designElementStyles}>{showDesignElement}</div>
+            <div className={preFooterDesignInnerwrapper}>
+              <div className={designElementStyles}>{showDesignElement}</div>
+              <div className={waveStyles}>
+                <ImageWrapper
+                  imageSrc={designImage}
+                  width={petalos ? 200 : 300}
+                  height={petalos ? 200 : 150}
+                />
+              </div>
+            </div>
           </div>
         )}
         <div className={customShapeDividerTop}>{footerSVG(green)}</div>
