@@ -9,7 +9,12 @@
   width: 100%;
 }
 .designSectionTitleWrapper {
+  position: relative;
   display: flex;
+  justify-content: space-between;
+}
+.designElementWrapper {
+  display: none;
 }
 .textArea {
   display: flex;
@@ -56,4 +61,10 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .designElementWrapper {
+    display: flex;
+    position: absolute;
+    right: -60px;
+    margin-top: -40px;
+  }
 }
