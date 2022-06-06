@@ -7,7 +7,8 @@ import { ArticleCluster } from '../../components/ui-components/article-cluster'
 import styles from '../../styles/actividades.module.css'
 import { main } from '../../styles/shared.module.css'
 
-const { mainWrapper } = styles
+const { mainWrapper, outsideWrapper, rightDesignElement, leftDesignElement } =
+  styles
 
 const COMPONENTS = {
   leadTextSection: LeadTextSection,
@@ -32,12 +33,16 @@ export default function Actividades({ storyblokData, articleList }) {
       <Head>
         <meta name='description' content='Guías de reciclaje Estudio Mov' />
       </Head>
-      <main className={main}>
-        <div className={mainWrapper}>
-          {headerContent}
-          {contentCluster}
-        </div>
-      </main>
+      <div className={outsideWrapper}>
+        <div className={rightDesignElement}></div>
+        <div className={leftDesignElement}></div>
+        <main className={main}>
+          <div className={mainWrapper}>
+            {headerContent}
+            {contentCluster}
+          </div>
+        </main>
+      </div>
     </>
   )
 }
