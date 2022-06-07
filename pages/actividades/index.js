@@ -3,12 +3,19 @@ import { getStoryblokData } from '../../utils/storyblok'
 // Components
 import { LeadTextSection } from '../../components/ui-components/leadtext-section'
 import { ArticleCluster } from '../../components/ui-components/article-cluster'
+import { ImageWrapper } from '../../components/ui-components/image-wrapper'
 // Styles
 import styles from '../../styles/actividades.module.css'
 import { main } from '../../styles/shared.module.css'
 
-const { mainWrapper, outsideWrapper, rightDesignElement, leftDesignElement } =
-  styles
+const {
+  mainWrapper,
+  outsideWrapper,
+  rightDesignElement,
+  rightDesignElementWrapper,
+  leftDesignElement,
+  leftDesignElementWrapper,
+} = styles
 
 const COMPONENTS = {
   leadTextSection: LeadTextSection,
@@ -34,8 +41,26 @@ export default function Actividades({ storyblokData, articleList }) {
         <meta name='description' content='Guías de reciclaje Estudio Mov' />
       </Head>
       <div className={outsideWrapper}>
-        <div className={rightDesignElement}></div>
-        <div className={leftDesignElement}></div>
+        <div className={rightDesignElement}>
+          <div className={rightDesignElementWrapper}>
+            <ImageWrapper
+              imageSrc={'/images/actividades-1.png'}
+              imageAlt='elemento-decorativo-1'
+              width={250}
+              height={350}
+            />
+          </div>
+        </div>
+        <div className={leftDesignElement}>
+          <div className={leftDesignElementWrapper}>
+            <ImageWrapper
+              imageSrc={'/images/actividades-2.png'}
+              imageAlt='elemento-decorativo-2'
+              width={190}
+              height={240}
+            />
+          </div>
+        </div>
         <main className={main}>
           <div className={mainWrapper}>
             {headerContent}
