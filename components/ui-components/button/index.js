@@ -8,7 +8,7 @@ export const Button = ({ blok, color, cta }) => {
 
   const buttonHref =
     cta && buttonLink
-      ? `mailto:${buttonLink}?subject=Quiero formar parte del cambio`
+      ? `mailto:${buttonLink}?subject=${cta}`
       : buttonLink
       ? buttonLink
       : null
