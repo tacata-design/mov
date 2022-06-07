@@ -131,9 +131,6 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  /* .headerContainer {
-    padding: 0 6px;
-  } */
   .headerWrapper,
   .headerWrapperOpen {
     height: 70px;
@@ -172,15 +169,8 @@
   .menuButton {
     display: none;
   }
-  /* .logoWrapper {
-    padding: 24px 0;
-  } */
   .logoWrapper {
     height: 60px;
     width: 200px;
   }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
 }
