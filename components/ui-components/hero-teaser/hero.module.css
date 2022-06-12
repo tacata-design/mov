@@ -7,6 +7,7 @@
 }
 .heroTitleWrapper {
   display: flex;
+  text-align: center;
   top: 10%;
   flex-direction: column;
 }
@@ -15,6 +16,7 @@
   font-size: 24px;
 }
 .heroTitleWrapper h2 {
+  font-size: 19px;
   font-weight: 200;
   margin-bottom: 48px;
 }
@@ -33,7 +35,7 @@
 }
 .ctaButtonWrapper {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .imageWrapper {
   position: relative;
@@ -55,6 +57,9 @@
   }
   .designElement {
     margin-left: -50px;
+  }
+  .heroTitleWrapper {
+    text-align: unset;
   }
   .heroTitleWrapper h1 {
     font-size: 32px;
