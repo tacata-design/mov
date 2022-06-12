@@ -18,16 +18,17 @@
 .leftImageWrapper {
   order: 1;
 }
-.leftTitle {
+/* .leftTitle {
   text-align: start;
 }
 .leftText {
   text-align: start;
-}
+} */
 .simpleSectionTitleWrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   background-color: #45533c;
   padding: 32px 16px 48px 16px;
   margin-top: -8px;
@@ -46,7 +47,7 @@
 .ctaButtonWrapper,
 .rightCtaButtonWrapper {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .ctaButtonWrapper button,
 .rightCtaButtonWrapper button {
@@ -109,6 +110,7 @@
     display: block;
   }
   .simpleSectionTitleWrapper {
+    text-align: unset;
     padding: 0 16px 0 16px;
     margin-top: 0px;
   }
@@ -126,6 +128,9 @@
   }
   .leftText {
     text-align: end;
+  }
+  .rightCtaButtonWrapper {
+    justify-content: flex-end;
   }
 }
 

@@ -19,6 +19,7 @@
 .textArea {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 .textArea h2 {
   font-size: 32px;
@@ -33,7 +34,7 @@
 }
 .ctaButtonWrapper {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .ctaButtonWrapper button {
   background-color: #a9bdc2;
@@ -49,6 +50,7 @@
   }
   .textArea {
     max-width: 50%;
+    text-align: unset;
   }
   .ctaButtonWrapper {
     justify-content: flex-start;

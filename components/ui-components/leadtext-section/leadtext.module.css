@@ -6,7 +6,7 @@
   margin-bottom: 48px;
 }
 .titleStyles {
-  font-size: 64px;
+  font-size: 56px;
   margin: 0;
   color: #45533c;
 }
@@ -22,4 +22,13 @@
   margin-top: 24px;
   font-weight: 200;
   font-size: 19px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .titleStyles {
+    font-size: 64px;
+  }
+  .leadTextWrapper {
+    text-align: unset;
+  }
 }
