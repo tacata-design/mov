@@ -49,7 +49,6 @@ const HOME = '/'
 const ACTIVIDADES = '/actividades'
 const EXPOSICIONES = '/exposiciones'
 const GUIAS = '/guias'
-const WITHOUT_SLIDER_MARGIN = '150px'
 const WITH_SLIDER_MARGIN = '0px'
 
 export const Footer = ({ sliderData }) => {
@@ -72,6 +71,7 @@ export const Footer = ({ sliderData }) => {
 
   const designElementStyles = petalos ? petalosStyle : leafStyle
   const designImage = petalos ? '/images/footer-leaf.png' : '/images/holas.png'
+  const withoutSliderMargins = pathname === '/kit-digital' ? '56px' : '150px'
 
   return (
     <>
@@ -84,7 +84,7 @@ export const Footer = ({ sliderData }) => {
       <footer
         style={{
           marginTop: `${
-            sliderData ? WITH_SLIDER_MARGIN : WITHOUT_SLIDER_MARGIN
+            sliderData ? WITH_SLIDER_MARGIN : withoutSliderMargins
           }`,
         }}
         className={footer}
