@@ -6,7 +6,11 @@ export const handleArticleLinks = (storyblokLinks) => {
   let paths = []
   articlePaths.forEach((article) => {
     article.split('/').filter((element) => {
-      if (element !== '' && element !== 'actividades') {
+      if (
+        element !== '' &&
+        element !== 'actividades' &&
+        element !== 'exposiciones'
+      ) {
         const slug = { params: { article: element } }
         paths.push(slug)
       }
