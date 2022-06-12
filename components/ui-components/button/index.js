@@ -26,7 +26,7 @@ export const Button = ({ blok, color, cta }) => {
     element = (
       <a
         className={buttonStyle}
-        style={{ background: buttonColor }}
+        style={{ background: buttonColor, color }}
         href={buttonHref}
         target={gotTo}
       >

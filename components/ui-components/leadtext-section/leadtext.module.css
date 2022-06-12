@@ -11,7 +11,8 @@
   color: #45533c;
 }
 .secondaryTitleStyles {
-  font-size: 48px;
+  font-size: 40px;
+  text-align: center;
   margin: 0;
   color: #45533c;
 }
@@ -28,7 +29,11 @@
   .titleStyles {
     font-size: 64px;
   }
-  .leadTextWrapper {
+  .secondaryTitleStyles {
+    font-size: 48px;
+  }
+  .leadTextWrapper,
+  .secondaryTitleStyles {
     text-align: unset;
   }
 }

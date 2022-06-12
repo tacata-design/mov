@@ -6,6 +6,11 @@
   text-align: center;
 }
 .titleStyles {
-  font-size: 64px;
+  font-size: 56px;
   color: #45533c;
+}
+@media (min-width: 768px) {
+  .titleStyles {
+    font-size: 64px;
+  }
 }

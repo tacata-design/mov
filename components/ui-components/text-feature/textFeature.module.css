@@ -1,0 +1,23 @@
+.mainWrapper {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 800px;
+}
+.primaryTextStyles {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.secondaryTextStyles {
+  font-size: 19px;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+@media (min-width: 768px) {
+  .mainWrapper {
+    text-align: unset;
+  }
+  .primaryTextStyles {
+    font-size: 48px;
+  }
+}
