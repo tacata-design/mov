@@ -20,6 +20,14 @@
     z-index: -100;
     top: 980px;
   }
+  .rightBottomDesignElement {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    z-index: -100;
+    top: 2150px;
+  }
   .rightDesignElementWrapper {
     display: flex;
     justify-content: flex-end;

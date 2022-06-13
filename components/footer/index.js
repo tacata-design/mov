@@ -55,9 +55,10 @@ export const Footer = ({ sliderData }) => {
   const { pathname } = useRouter()
   const [showDesignElement, setShowDesignElement] = useState(null)
   const [petalos, setPetalos] = useState(false)
+  const actividades = pathname === ACTIVIDADES
 
   useEffect(() => {
-    if (pathname === HOME || pathname === ACTIVIDADES) {
+    if (pathname === HOME || actividades) {
       setShowDesignElement(leafSVG(leaf))
       setPetalos(false)
     } else if (pathname === EXPOSICIONES) {
@@ -67,10 +68,14 @@ export const Footer = ({ sliderData }) => {
       setShowDesignElement(null)
       setPetalos(false)
     }
-  }, [pathname])
+  }, [pathname, actividades])
 
   const designElementStyles = petalos ? petalosStyle : leafStyle
-  const designImage = petalos ? '/images/footer-leaf.png' : '/images/holas.png'
+  const designImage = petalos
+    ? '/images/footer-leaf.png'
+    : actividades
+    ? null
+    : '/images/holas.png'
   const withoutSliderMargins = pathname === '/kit-digital' ? '56px' : '150px'
 
   return (
@@ -94,11 +99,13 @@ export const Footer = ({ sliderData }) => {
             <div className={preFooterDesignInnerwrapper}>
               <div className={designElementStyles}>{showDesignElement}</div>
               <div className={waveStyles}>
-                <ImageWrapper
-                  imageSrc={designImage}
-                  width={petalos ? 200 : 300}
-                  height={petalos ? 200 : 150}
-                />
+                {designImage && (
+                  <ImageWrapper
+                    imageSrc={designImage}
+                    width={petalos ? 200 : 300}
+                    height={petalos ? 200 : 150}
+                  />
+                )}
               </div>
             </div>
           </div>
