@@ -3,9 +3,18 @@ import { getStoryblokLinks, getStoryblokData } from '../../utils/storyblok'
 // Components
 import { DynamicComponent } from '../../components/dynamic-component'
 import { ArticleHeader } from '../../components/ui-components/article-header'
+import { ImageWrapper } from '../../components/ui-components/image-wrapper'
 // Styles
 import { main } from '../../styles/shared.module.css'
-import { mainWrapper, bodyContent } from '../../styles/article.module.css'
+import {
+  mainWrapper,
+  bodyContent,
+  outsideWrapper,
+  leftDesignElement,
+  leftDesignElementWrapper,
+  rightDesignElementWrapper,
+  rightBottomDesignElement,
+} from '../../styles/article.module.css'
 
 const PAGE_PATH = 'actividades'
 const COMPONENTS = {
@@ -31,12 +40,34 @@ export default function Article({ storyblokData }) {
           content='Todas las actividades de Estudio Mov'
         />
       </Head>
-      <main className={main}>
-        <div className={mainWrapper}>
-          {headerContent}
-          <div className={bodyContent}>{pageContent}</div>
+      <div className={outsideWrapper}>
+        <div className={leftDesignElement}>
+          <div className={leftDesignElementWrapper}>
+            <ImageWrapper
+              imageSrc={'/images/circulos-decorativos.png'}
+              imageAlt='circulos decorativos'
+              width={250}
+              height={250}
+            />
+          </div>
         </div>
-      </main>
+        <div className={rightBottomDesignElement}>
+          <div className={rightDesignElementWrapper}>
+            <ImageWrapper
+              imageSrc={'/images/actividades-3.png'}
+              imageAlt='elemento-decorativo-3'
+              width={250}
+              height={250}
+            />
+          </div>
+        </div>
+        <main className={main}>
+          <div className={mainWrapper}>
+            {headerContent}
+            <div className={bodyContent}>{pageContent}</div>
+          </div>
+        </main>
+      </div>
     </>
   )
 }

@@ -16,3 +16,50 @@
   font-size: 19px;
   font-weight: 200;
 }
+.outsideWrapper {
+  position: relative;
+}
+.leftDesignElement,
+.rightDesignElement {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .rightDesignElement {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    z-index: -100;
+    top: 980px;
+  }
+  .rightBottomDesignElement {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    z-index: -100;
+    top: 2150px;
+    right: 100px;
+  }
+  .rightDesignElementWrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 1400px;
+    margin: 0 auto;
+  }
+  .leftDesignElement {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    top: 500px;
+    left: -150px;
+    z-index: -100;
+  }
+  .leftDesignElementWrapper {
+    display: flex;
+    justify-content: flex-start;
+    width: 1400px;
+    margin: 0 auto;
+  }
+}
