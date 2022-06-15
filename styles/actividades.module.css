@@ -8,7 +8,8 @@
   position: relative;
 }
 .leftDesignElement,
-.rightDesignElement {
+.rightDesignElement,
+.rightBottomDesignElement {
   display: none;
 }
 @media (min-width: 1200px) {

@@ -21,7 +21,8 @@
 }
 .leftDesignElement,
 .rightDesignElement,
-.leftSecondaryDesignElement {
+.leftSecondaryDesignElement,
+.rightBottomDesignElement {
   display: none;
 }
 @media (min-width: 1200px) {
