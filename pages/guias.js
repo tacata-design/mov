@@ -4,8 +4,19 @@ import { getStoryblokData } from '../utils/storyblok'
 // Components
 import { ArticleHeader } from '../components/ui-components/article-header'
 import { DynamicComponent } from '../components/dynamic-component'
+import { ImageWrapper } from '../components/ui-components/image-wrapper'
 // Styles
-import { mainWrapper, bodyContent } from '../styles/guias.module.css'
+import {
+  mainWrapper,
+  bodyContent,
+  outsideWrapper,
+  rightDesignElement,
+  rightDesignElementWrapper,
+  rightBottomDesignElement,
+  rightBottomDesignElementWrapper,
+  leftDesignElement,
+  leftDesignElementWrapper,
+} from '../styles/Guias.module.css'
 import { main } from '../styles/shared.module.css'
 
 const COMPONENTS = {
@@ -36,12 +47,44 @@ export default function Guias({ storyblokData, getSliderData }) {
       <Head>
         <meta name='description' content='Guías de reciclaje Estudio Mov' />
       </Head>
-      <main className={main}>
-        <div className={mainWrapper}>
-          {headerContent}
-          <div className={bodyContent}>{pageContent}</div>
+      <div className={outsideWrapper}>
+        <div className={rightDesignElement}>
+          <div className={rightDesignElementWrapper}>
+            <ImageWrapper
+              imageSrc={'/images/rama-vieja.png'}
+              imageAlt='elemento-decorativo'
+              width={250}
+              height={350}
+            />
+          </div>
         </div>
-      </main>
+        <div className={leftDesignElement}>
+          <div className={leftDesignElementWrapper}>
+            <ImageWrapper
+              imageSrc={'/images/gotas.png'}
+              imageAlt='gotas decorativos'
+              width={200}
+              height={250}
+            />
+          </div>
+        </div>
+        <div className={rightBottomDesignElement}>
+          <div className={rightBottomDesignElementWrapper}>
+            <ImageWrapper
+              imageSrc={'/images/cactus.png'}
+              imageAlt='elemento-decorativo'
+              width={350}
+              height={550}
+            />
+          </div>
+        </div>
+        <main className={main}>
+          <div className={mainWrapper}>
+            {headerContent}
+            <div className={bodyContent}>{pageContent}</div>
+          </div>
+        </main>
+      </div>
     </>
   )
 }

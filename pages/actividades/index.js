@@ -15,6 +15,7 @@ const {
   rightDesignElementWrapper,
   leftDesignElement,
   leftDesignElementWrapper,
+  rightBottomDesignElement,
 } = styles
 
 const COMPONENTS = {
@@ -54,10 +55,20 @@ export default function Actividades({ storyblokData, articleList }) {
         <div className={leftDesignElement}>
           <div className={leftDesignElementWrapper}>
             <ImageWrapper
-              imageSrc={'/images/actividades-2.png'}
-              imageAlt='elemento-decorativo-2'
+              imageSrc={'/images/gotas.png'}
+              imageAlt='gotas'
               width={190}
               height={240}
+            />
+          </div>
+        </div>
+        <div className={rightBottomDesignElement}>
+          <div className={rightDesignElementWrapper}>
+            <ImageWrapper
+              imageSrc={'/images/actividades-3.png'}
+              imageAlt='elemento-decorativo-3'
+              width={250}
+              height={250}
             />
           </div>
         </div>
