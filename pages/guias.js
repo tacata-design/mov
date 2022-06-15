@@ -16,7 +16,7 @@ import {
   rightBottomDesignElementWrapper,
   leftDesignElement,
   leftDesignElementWrapper,
-} from '../styles/Guias.module.css'
+} from '../styles/guias.module.css'
 import { main } from '../styles/shared.module.css'
 
 const COMPONENTS = {
