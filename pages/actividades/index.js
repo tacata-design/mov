@@ -55,8 +55,8 @@ export default function Actividades({ storyblokData, articleList }) {
         <div className={leftDesignElement}>
           <div className={leftDesignElementWrapper}>
             <ImageWrapper
-              imageSrc={'/images/actividades-2.png'}
-              imageAlt='elemento-decorativo-2'
+              imageSrc={'/images/gotas.png'}
+              imageAlt='gotas'
               width={190}
               height={240}
             />

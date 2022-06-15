@@ -20,7 +20,8 @@
   position: relative;
 }
 .leftDesignElement,
-.rightDesignElement {
+.rightDesignElement,
+.leftSecondaryDesignElement {
   display: none;
 }
 @media (min-width: 1200px) {
@@ -30,7 +31,7 @@
     overflow: hidden;
     width: 100%;
     z-index: -100;
-    top: 980px;
+    top: 1200px;
   }
   .rightBottomDesignElement {
     display: block;
@@ -56,9 +57,24 @@
     left: -150px;
     z-index: -100;
   }
+  .leftSecondaryDesignElement {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    top: 1800px;
+    z-index: -100;
+  }
   .leftDesignElementWrapper {
     display: flex;
     justify-content: flex-start;
+    width: 1400px;
+    margin: 0 auto;
+  }
+  .nutDesignElementWrapper {
+    display: flex;
+    justify-content: flex-end;
+    height: 250px;
     width: 1400px;
     margin: 0 auto;
   }

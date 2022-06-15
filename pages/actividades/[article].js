@@ -4,6 +4,7 @@ import { getStoryblokLinks, getStoryblokData } from '../../utils/storyblok'
 import { DynamicComponent } from '../../components/dynamic-component'
 import { ArticleHeader } from '../../components/ui-components/article-header'
 import { ImageWrapper } from '../../components/ui-components/image-wrapper'
+import { nutSVG } from '../../components/ui-components/svg'
 // Styles
 import { main } from '../../styles/shared.module.css'
 import {
@@ -12,8 +13,11 @@ import {
   outsideWrapper,
   leftDesignElement,
   leftDesignElementWrapper,
+  rightDesignElement,
   rightDesignElementWrapper,
+  nutDesignElementWrapper,
   rightBottomDesignElement,
+  leftSecondaryDesignElement,
 } from '../../styles/article.module.css'
 
 const PAGE_PATH = 'actividades'
@@ -51,6 +55,16 @@ export default function Article({ storyblokData }) {
             />
           </div>
         </div>
+        <div className={leftSecondaryDesignElement}>
+          <div className={leftDesignElementWrapper}>
+            <ImageWrapper
+              imageSrc={'/images/rama.png'}
+              imageAlt='rama decorativo'
+              width={250}
+              height={250}
+            />
+          </div>
+        </div>
         <div className={rightBottomDesignElement}>
           <div className={rightDesignElementWrapper}>
             <ImageWrapper
@@ -60,6 +74,9 @@ export default function Article({ storyblokData }) {
               height={250}
             />
           </div>
+        </div>
+        <div className={rightDesignElement}>
+          <div className={nutDesignElementWrapper}>{nutSVG()}</div>
         </div>
         <main className={main}>
           <div className={mainWrapper}>
