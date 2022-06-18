@@ -13,7 +13,7 @@ export const ImageWrapper = ({
 }) => {
   let fileName = null,
     altDescription = null
-  if (blok && blok.src) {
+  if (blok && blok.src && blok.src !== '') {
     fileName = blok.src.filename
     altDescription = blok.src.alt
   }
