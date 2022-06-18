@@ -10,7 +10,9 @@ export const ArticleHeader = ({ blok, imageWidth, imageHeight }) => {
     <div className={mainWrapper}>
       <h1 className={titleStyles}>{title}</h1>
       <h2>{leadText}</h2>
-      <ImageWrapper blok={src} width={imageWidth} height={imageHeight} />
+      {src && (
+        <ImageWrapper blok={src} width={imageWidth} height={imageHeight} />
+      )}
     </div>
   )
 }
