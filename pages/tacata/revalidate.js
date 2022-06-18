@@ -1,8 +1,13 @@
 import axios from 'axios'
 import { useState } from 'react'
-import styles from '../../styles/Revalidate.module.css'
-
-const { main, formStyles, error, loader, black, white } = styles
+import {
+  main,
+  formStyles,
+  error,
+  loader,
+  black,
+  white,
+} from '../../styles/Revalidate.module.css'
 
 export default function Revalidate() {
   const [keyValue, setKeyValue] = useState('')

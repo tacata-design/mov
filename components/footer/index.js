@@ -136,19 +136,19 @@ export const Footer = ({ sliderData }) => {
                     <a>Guias</a>
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href='/regalos'>
                     <a>Regalos</a>
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link href='/exposiciones'>
                     <a>Exposiciones</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href='/rsc'>
-                    <a>RSC</a>
+                  <Link href='/kit-digital'>
+                    <a>Kit Digital</a>
                   </Link>
                 </li>
               </ul>
@@ -159,7 +159,7 @@ export const Footer = ({ sliderData }) => {
               <p>876 28 08 06</p>
               <p>info@estudiomov.es</p>
               <div className={socialMedia}>
-                <div className={facebookWrapper}>
+                {/* <div className={facebookWrapper}>
                   <Link href='/'>
                     <a>{facebookSVG(white)}</a>
                   </Link>
@@ -168,7 +168,7 @@ export const Footer = ({ sliderData }) => {
                   <Link href='/'>
                     <a>{instaSVG(white)}</a>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -180,11 +180,11 @@ export const Footer = ({ sliderData }) => {
           <div className={legalLinkWrapper}>
             <ul className={legalLinks}>
               <li>
-                <Link href='/legal'>
+                <Link href='/aviso-legal'>
                   <a>AVISO LEGAL</a>
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href='/privacidad'>
                   <a>PRIVACIDAD</a>
                 </Link>
@@ -193,7 +193,7 @@ export const Footer = ({ sliderData }) => {
                 <Link href='/cookies'>
                   <a>COOKIES</a>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
