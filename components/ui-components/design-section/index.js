@@ -1,6 +1,6 @@
-import Image from 'next/image'
 // Components
 import { Button } from '../button'
+import { Media } from '../media'
 import { ImageWrapper } from '../image-wrapper'
 // Styles
 import styles from './designSection.module.css'
@@ -15,20 +15,15 @@ const {
 } = styles
 
 export const DesignSection = ({ blok }) => {
-  const { image, title, subtitle, cta } = blok
+  const { sectionMedia, title, subtitle, cta } = blok
+  const [media] = sectionMedia
   const ctaButton = cta.map((element) => (
     <Button key={element._uid} blok={element} />
   ))
   return (
     <div className={designSectionWrapper}>
       <div className={imageWrapper}>
-        <Image
-          src={image.filename}
-          alt={image.alt}
-          width={1280}
-          height={720}
-          priority
-        />
+        <Media blok={media} priority />
       </div>
       <div className={designSectionTitleWrapper}>
         <div className={textArea}>

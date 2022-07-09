@@ -28,8 +28,7 @@
     overflow: hidden;
     width: 100%;
     z-index: -100;
-    top: 900px;
-    /* right: -120px; */
+    top: 100vh;
   }
   .rightBottomDesignElement {
     display: block;
@@ -37,7 +36,7 @@
     overflow: hidden;
     width: 100%;
     z-index: -100;
-    top: 1900px;
+    bottom: -100px;
   }
   .rightDesignElementWrapper {
     display: flex;

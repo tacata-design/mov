@@ -3,6 +3,7 @@
   margin: 24px 0;
   position: relative;
   margin-bottom: -10px !important;
+  overflow: hidden;
 }
 .textContentWrapper,
 .leftTextContentWrapper {
@@ -18,12 +19,6 @@
 .leftImageWrapper {
   order: 1;
 }
-/* .leftTitle {
-  text-align: start;
-}
-.leftText {
-  text-align: start;
-} */
 .simpleSectionTitleWrapper {
   display: flex;
   flex-direction: column;

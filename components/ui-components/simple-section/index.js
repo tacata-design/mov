@@ -1,5 +1,5 @@
 // Components
-import { ImageWrapper } from '../image-wrapper'
+import { Media } from '../media'
 import { Button } from '../button'
 import { footerSVG } from '../svg'
 // Styles
@@ -23,7 +23,6 @@ const {
 
 export const SimpleSection = ({ blok, expo }) => {
   const {
-    image: { filename, alt },
     title,
     subtitle,
     cta,
@@ -31,7 +30,9 @@ export const SimpleSection = ({ blok, expo }) => {
     backgroundColor,
     titleColor,
     textColor,
+    sectionMedia,
   } = blok
+  const [media] = sectionMedia
 
   const ctaButton = cta.map((element) => (
     <Button key={element._uid} blok={element} />
@@ -44,16 +45,7 @@ export const SimpleSection = ({ blok, expo }) => {
         {!expo ? (
           <div className={customShapeDividerTop}>{footerSVG(white)}</div>
         ) : null}
-        <div className={imageWrapper}>
-          {filename && (
-            <ImageWrapper
-              imageSrc={filename}
-              imageAlt={alt}
-              width={720}
-              height={640}
-            />
-          )}
-        </div>
+        <div className={imageWrapper}>{media && <Media blok={media} />}</div>
         <div className={textContentWrapper}>
           <div
             style={{ backgroundColor, height: '100%' }}
@@ -88,14 +80,7 @@ export const SimpleSection = ({ blok, expo }) => {
           </div>
         </div>
         <div className={leftImageWrapper}>
-          {filename && (
-            <ImageWrapper
-              imageSrc={filename}
-              imageAlt={alt}
-              width={720}
-              height={640}
-            />
-          )}
+          {media && <Media blok={media} />}
         </div>
         {!expo && (
           <div className={customShapeDividerBottom}>{footerSVG(white)}</div>
