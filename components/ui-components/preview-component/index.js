@@ -1,18 +1,25 @@
-import { ImageWrapper } from '../image-wrapper'
+import Link from 'next/link'
+import { Media } from '../media'
 import { mainWrapper, titleStyles } from './previewComponent.module.css'
 
-export const PreviewComponent = ({ data }) => {
-  const image = data.image ? (
-    <ImageWrapper blok={data.image[0]} width={1024} height={640} />
-  ) : null
+export const PreviewComponent = ({ data, href }) => {
+  const { headerMedia } = data
+
+  let media = null
+  if (headerMedia) {
+    media = headerMedia[0]
+  }
+
   const title = data.title ? (
     <h2 className={titleStyles}>{data.title}</h2>
   ) : null
 
   return (
     <div className={mainWrapper}>
-      {image}
-      {title}
+      {media && <Media blok={media} />}
+      <Link href={href}>
+        <a>{title}</a>
+      </Link>
     </div>
   )
 }

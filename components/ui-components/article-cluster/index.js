@@ -28,7 +28,9 @@ export const ArticleCluster = ({ blok }) => {
       firstRichText.push(element)
     }
     if (element.component === 'articleHeader') {
-      return <PreviewComponent key={element._uid} data={element} />
+      return (
+        <PreviewComponent key={element._uid} data={element} href={full_slug} />
+      )
     }
   })
 

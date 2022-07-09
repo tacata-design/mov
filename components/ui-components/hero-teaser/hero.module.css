@@ -38,10 +38,7 @@
   justify-content: center;
 }
 .imageWrapper {
-  position: relative;
-  justify-content: flex-end;
-  overflow: hidden;
-  margin-top: 24px;
+  display: none;
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -90,6 +87,13 @@
   .designElement {
     margin-left: -50px;
     margin-top: 50px;
+  }
+  .imageWrapper {
+    display: block;
+    position: relative;
+    justify-content: flex-end;
+    overflow: hidden;
+    margin-top: 24px;
   }
 }
 
