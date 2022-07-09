@@ -3,6 +3,8 @@
   margin: 24px 0;
   position: relative;
   margin-bottom: -10px !important;
+  max-height: 640px;
+  overflow: hidden;
 }
 .textContentWrapper,
 .leftTextContentWrapper {

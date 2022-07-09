@@ -10,6 +10,7 @@ import { SideBarText } from '../ui-components/sidebar-text'
 // import { SliderWrapper } from '../ui-components/slider'
 import { ArticleCluster } from '../ui-components/article-cluster'
 import { ArticleHeader } from '../ui-components/article-header'
+import { Media } from '../ui-components/media'
 
 const COMPONENTS = {
   teaser: HeroTeaser,
@@ -23,6 +24,7 @@ const COMPONENTS = {
   // slider: SliderWrapper,
   articleCluster: ArticleCluster,
   articleHeader: ArticleHeader,
+  media: Media,
 }
 
 export const DynamicComponent = ({ blok, articleList, secondary }) => {

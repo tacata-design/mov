@@ -1,7 +1,7 @@
 import Image from 'next/image'
 // Components
 import { Button } from '../button'
-import { ImageWrapper } from '../image-wrapper'
+import { Media } from '../media'
 // Styles
 import styles from './hero.module.css'
 
@@ -16,7 +16,8 @@ const {
 } = styles
 
 export const HeroTeaser = ({ blok }) => {
-  const { image, intro, title, subtitle, cta } = blok
+  const { teaserMedia, intro, title, subtitle, cta } = blok
+  const [media] = teaserMedia
   const ctaButton = cta.map((element) => (
     <Button key={element._uid} blok={element} />
   ))
@@ -41,7 +42,7 @@ export const HeroTeaser = ({ blok }) => {
         </div>
       </div>
       <div className={imageWrapper}>
-        <ImageWrapper imageSrc={image.filename} imageAlt={image.alt} priority />
+        <Media blok={media} priority />
       </div>
     </div>
   )

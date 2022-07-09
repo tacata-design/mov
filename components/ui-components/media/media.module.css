@@ -1,0 +1,13 @@
+.mediaWrapper {
+  width: 100%;
+  position: relative;
+}
+.mediaWrapper > span {
+  position: unset !important;
+}
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
