@@ -15,7 +15,7 @@ export const Media = ({ blok, imageSrc, imageAlt, priority }) => {
 
   let content = null
   if (mediaSource) {
-    if (mediaSource.filename?.includes('.mp4')) {
+    if (mediaSource.filename?.toLowerCase().includes('.mp4')) {
       content = (
         <ReactPlayer
           config={{ file: { attributes: { controlsList: 'nodownload' } } }}
