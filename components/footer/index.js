@@ -120,8 +120,8 @@ export const Footer = ({ sliderData }) => {
                 </Link>
               </div>
               <div className={addressBox}>
-                <p>Calle Doctor Alcay 16 Oficina C</p>
-                <p>50.006 Zaragoza</p>
+                <p>Calle Doctor Alcay, 16 Oficina C</p>
+                <p>50006 Zaragoza</p>
               </div>
             </div>
             <div className={linksSection}>
